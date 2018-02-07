@@ -50,3 +50,6 @@ tests/ssl/server-csr.pem: tests/ssl/server-key.pem
 
 tests/ssl/server-key.pem:
 	openssl genrsa -out tests/ssl/server-key.pem 2048
+
+proto-gen:
+	./genproto.sh

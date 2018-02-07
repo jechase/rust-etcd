@@ -94,6 +94,10 @@ extern crate tokio_core;
 extern crate tokio_timer;
 extern crate url;
 
+extern crate grpc;
+extern crate protobuf;
+extern crate tls_api;
+
 pub use client::{BasicAuth, Client, ClusterInfo, Health, Response};
 pub use error::{ApiError, Error};
 pub use version::VersionInfo;
@@ -109,3 +113,6 @@ mod error;
 mod http;
 mod options;
 mod version;
+
+/// v3 api
+pub mod v3;
